@@ -146,8 +146,8 @@ window.BEST_NEARBY = {
 
     const selectedCategory =
       picker.options[picker.selectedIndex] &&
-      picker.options[picker.selectedIndex].textContent
-        ? picker.options[picker.selectedIndex].textContent.replace(/^Best\s+/, "")
+      picker.options[picker.selectedIndex].dataset.category
+        ? picker.options[picker.selectedIndex].dataset.category
         : "";
 
     picker.innerHTML = "";
@@ -155,7 +155,8 @@ window.BEST_NEARBY = {
     window.BEST_NEARBY.categories.forEach((x, i) => {
       const option = document.createElement("option");
       option.value = i;
-      option.textContent = `Best ${x.category}`;
+      option.dataset.category = x.category;
+      option.textContent = `${x.emoji || ""} ${x.category}`.trim();
       picker.appendChild(option);
     });
 

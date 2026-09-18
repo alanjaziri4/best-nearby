@@ -39,7 +39,7 @@ h2{font-size:30px;line-height:1.05;margin:8px 0 8px}.blurb{color:var(--muted);ma
 <script>
 const cfg=window.BEST_NEARBY, $=id=>document.getElementById(id), picker=$("picker");
 $("siteTitle").textContent=cfg.siteTitle; $("subtitle").textContent=cfg.subtitle; $("disclosure").textContent=cfg.disclosure;
-cfg.categories.forEach((x,i)=>{const o=document.createElement("option");o.value=i;o.textContent=`Best ${x.category}`;picker.appendChild(o)});
+cfg.categories.forEach((x,i)=>{const o=document.createElement("option");o.value=i;o.dataset.category=x.category;o.textContent=`${x.emoji||""} ${x.category}`.trim();picker.appendChild(o)});
 function render(i){const x=cfg.categories[i];$("category").textContent=`${x.emoji||""}  Best ${x.category}`;$("business").textContent=x.business;$("blurb").textContent=x.blurb;$("perk").textContent=x.perk;$("website").href=x.website;$("directions").href=x.directions}
 picker.addEventListener("change",()=>render(+picker.value));render(0);
 const params=new URLSearchParams(location.search);if(params.get("pitch")==="1"){$("pitch").classList.add("on");$("applyPitch").onclick=()=>{if($("pitchBusiness").value)$("business").textContent=$("pitchBusiness").value;if($("pitchPerk").value)$("perk").textContent=$("pitchPerk").value}}

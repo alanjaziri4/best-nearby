@@ -1,5 +1,5 @@
 // Best Nearby — live sponsor data from Google Sheets
-// This is designed to work with the existing index.html without changing the QR.
+// Edit the Google Sheet; this file should not need to change again.
 
 window.BEST_NEARBY = {
   siteTitle: "Best Nearby",
@@ -18,17 +18,18 @@ google.visualization.Query.setResponse = function (response) {
     return;
   }
 
-  const table = response.table;
-  const headers = table.cols.map(col => (col.label || "").trim());
+  const headers = response.table.cols.map(col => (col.label || "").trim());
   const index = Object.fromEntries(headers.map((name, i) => [name, i]));
 
   function get(row, name) {
-    const cell = row.c[index[name]];
+    const i = index[name];
+    if (i === undefined) return "";
+    const cell = row.c[i];
     if (!cell || cell.v == null) return "";
     return String(cell.v).trim();
   }
 
-  window.BEST_NEARBY.categories = table.rows
+  window.BEST_NEARBY.categories = response.table.rows
     .filter(row => get(row, "Active").toUpperCase() === "TRUE")
     .map(row => ({
       category: get(row, "Category"),
@@ -42,8 +43,8 @@ google.visualization.Query.setResponse = function (response) {
     .filter(item => item.category && item.business);
 };
 
-// document.write keeps loading synchronous here, so the existing index.html
-// sees the Sheet data before it builds the dropdown.
+// Load the public Sheet synchronously so the existing index.html can
+// build the dropdown immediately after sponsors.js finishes.
 document.write(
-  '<script src="https://docs.google.com/spreadsheets/d/12moshgznXZRxywLvHyTAre4Z40oQxN1kebrRRIpIuFM/gviz/tq?tqx=out:json&amp;sheet=Sponsors"><\\/script>'
+  '<script src="https://docs.google.com/spreadsheets/d/12moshgznXZRxywLvHyTAre4Z40oQxN1kebrRRIpIuFM/gviz/tq?tqx=out:json&amp;sheet=Sponsors"><\/script>'
 );

@@ -7,6 +7,15 @@ window.BEST_NEARBY = {
   subtitle: "Our local picks for your stay",
   disclosure: "Sponsored local partner — we may receive compensation for this recommendation.",
   categories: [
+{
+  "category": "Chinese",
+  "emoji": "🥡",
+  "business": "Golden Palace",
+  "blurb": "Our local pick for a golden little takeout night.",
+  "perk": "",
+  "website": "https://www.goldenpalace-ct.com/",
+  "directions": "https://www.google.com/maps/dir/?api=1&destination=Golden%20Palace%2C%202173%20Norwich-New%20London%20Turnpike%2C%20Uncasville%2C%20CT%2006382"
+},
   {
     "category": "Pizza",
     "emoji": "🍕",

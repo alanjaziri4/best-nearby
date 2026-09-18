@@ -11,7 +11,7 @@ window.BEST_NEARBY = {
     "category": "Pizza",
     "emoji": "🍕",
     "business": "Illiano's Grill",
-    "blurb": "Our local pizza pick.",
+    "blurb": "Our pick for a little slice of local happiness.",
     "perk": "",
     "website": "https://illianosgrill.com/",
     "directions": "https://www.google.com/maps/dir/?api=1&destination=Illiano%27s%20Grill%2C%20257%20W%20Town%20St%2C%20Norwich%2C%20CT%2006389"
@@ -20,7 +20,7 @@ window.BEST_NEARBY = {
     "category": "Pasta",
     "emoji": "🍝",
     "business": "Jack's Brick Oven",
-    "blurb": "Our local pasta pick.",
+    "blurb": "Our choice for a forkful of comfort with a local twirl.",
     "perk": "",
     "website": "https://jacksbrickoven.com/",
     "directions": "https://www.google.com/maps/dir/?api=1&destination=Jack%27s%20Brick%20Oven%2C%20493%20W%20Main%20St%2C%20Norwich%2C%20CT%2006360"
@@ -29,7 +29,7 @@ window.BEST_NEARBY = {
     "category": "Sushi",
     "emoji": "🍣",
     "business": "Mahzu Japanese Restaurant",
-    "blurb": "Our local sushi pick.",
+    "blurb": "Our local pick for good rolls and even better moods.",
     "perk": "",
     "website": "https://www.google.com/maps/search/?api=1&query=Mahzu%20Japanese%20Restaurant%2C%20624%20W%20Main%20St%2C%20Norwich%2C%20CT%2006360",
     "directions": "https://www.google.com/maps/dir/?api=1&destination=Mahzu%20Japanese%20Restaurant%2C%20624%20W%20Main%20St%2C%20Norwich%2C%20CT%2006360"
@@ -38,7 +38,7 @@ window.BEST_NEARBY = {
     "category": "Cocktails",
     "emoji": "🍸",
     "business": "Your Cocktail Sponsor",
-    "blurb": "Our local cocktail pick.",
+    "blurb": "Our pick for a little local spirit, on the rocks.",
     "perk": "Guest perk goes here",
     "website": "https://example.com",
     "directions": "https://maps.apple.com/"
@@ -47,7 +47,7 @@ window.BEST_NEARBY = {
     "category": "Breakfast",
     "emoji": "🥞",
     "business": "Your Breakfast Sponsor",
-    "blurb": "Our local breakfast pick.",
+    "blurb": "Our sunny-side-up choice for starting the day right.",
     "perk": "Guest perk goes here",
     "website": "https://example.com",
     "directions": "https://maps.apple.com/"
@@ -56,7 +56,7 @@ window.BEST_NEARBY = {
     "category": "Coffee",
     "emoji": "☕",
     "business": "Your Coffee Sponsor",
-    "blurb": "Our local coffee pick.",
+    "blurb": "Our go-to for a cup of joe and a little get-up-and-go.",
     "perk": "Guest perk goes here",
     "website": "https://example.com",
     "directions": "https://maps.apple.com/"
@@ -65,7 +65,7 @@ window.BEST_NEARBY = {
     "category": "Steak",
     "emoji": "🥩",
     "business": "Your Steak Sponsor",
-    "blurb": "Our local steak pick.",
+    "blurb": "Our pick for a sizzling night out. Well done, you.",
     "perk": "Guest perk goes here",
     "website": "https://example.com",
     "directions": "https://maps.apple.com/"
@@ -74,7 +74,7 @@ window.BEST_NEARBY = {
     "category": "Late Night",
     "emoji": "🌙",
     "business": "Your Late-Night Sponsor",
-    "blurb": "Our late-night pick.",
+    "blurb": "Our pick for when your pajamas are on but your appetite isn't off.",
     "perk": "Guest perk goes here",
     "website": "https://example.com",
     "directions": "https://maps.apple.com/"
@@ -83,7 +83,7 @@ window.BEST_NEARBY = {
     "category": "Spa & Massage",
     "emoji": "💆",
     "business": "Your Wellness Sponsor",
-    "blurb": "Our local wellness pick.",
+    "blurb": "Our go-to for fewer knots and more ahhhs.",
     "perk": "Guest perk goes here",
     "website": "https://example.com",
     "directions": "https://maps.apple.com/"
@@ -92,7 +92,7 @@ window.BEST_NEARBY = {
     "category": "Golf",
     "emoji": "⛳",
     "business": "Your Golf Sponsor",
-    "blurb": "Our local golf pick.",
+    "blurb": "Our pick for fairways, fresh air, and the occasional mulligan.",
     "perk": "Guest perk goes here",
     "website": "https://example.com",
     "directions": "https://maps.apple.com/"
@@ -101,7 +101,7 @@ window.BEST_NEARBY = {
     "category": "Entertainment",
     "emoji": "🎟️",
     "business": "Your Entertainment Sponsor",
-    "blurb": "Our local entertainment pick.",
+    "blurb": "Our choice for turning a night out into a story worth telling.",
     "perk": "Guest perk goes here",
     "website": "https://example.com",
     "directions": "https://maps.apple.com/"
@@ -110,7 +110,7 @@ window.BEST_NEARBY = {
     "category": "Transportation",
     "emoji": "🚙",
     "business": "Your Transportation Sponsor",
-    "blurb": "Our local transportation pick.",
+    "blurb": "Our choice for getting around without going in circles.",
     "perk": "Guest perk goes here",
     "website": "https://example.com",
     "directions": "https://maps.apple.com/"
@@ -119,7 +119,7 @@ window.BEST_NEARBY = {
     "category": "Thai",
     "emoji": "🍜",
     "business": "Thai by Thai",
-    "blurb": "Our local Thai pick.",
+    "blurb": "Our choice for a little spice and everything rice.",
     "perk": "",
     "website": "https://lovethaibythai.com/",
     "directions": "https://www.google.com/maps/dir/?api=1&destination=Thai%20by%20Thai%2C%20631%20N%20Main%20St%2C%20Norwich%2C%20CT%2006360"
@@ -128,7 +128,7 @@ window.BEST_NEARBY = {
     "category": "Sandwiches",
     "emoji": "🥪",
     "business": "VOC's Westside Pizza",
-    "blurb": "Our local sandwich pick.",
+    "blurb": "Our go-to for happiness stacked between two slices.",
     "perk": "",
     "website": "https://www.vocswestsidepizza.com/",
     "directions": "https://www.google.com/maps/dir/?api=1&destination=VOC%27s%20Westside%20Pizza%2C%20273%20W%20Main%20St%2C%20Norwich%2C%20CT%2006360"

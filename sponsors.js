@@ -8,6 +8,15 @@ window.BEST_NEARBY = {
   disclosure: "Sponsored local partner — we may receive compensation for this recommendation.",
   categories: [
 {
+  "category": "Best of the Best",
+  "emoji": "🥇",
+  "business": "Mahzu Japanese Restaurant",
+  "blurb": "Our gold-medal pick. This is how we roll.",
+  "perk": "",
+  "website": "https://www.google.com/maps/search/?api=1&query=Mahzu%20Japanese%20Restaurant%2C%20624%20W%20Main%20St%2C%20Norwich%2C%20CT%2006360",
+  "directions": "https://www.google.com/maps/dir/?api=1&destination=Mahzu%20Japanese%20Restaurant%2C%20624%20W%20Main%20St%2C%20Norwich%2C%20CT%2006360"
+},
+{
   "category": "Chinese",
   "emoji": "🥡",
   "business": "Golden Palace",

@@ -23,7 +23,7 @@ h2{font-size:30px;line-height:1.05;margin:8px 0 8px}.blurb{color:var(--muted);ma
   <div class="eyebrow">LOCAL GUEST GUIDE</div>
   <h1 id="siteTitle">Best Nearby</h1>
   <p class="sub" id="subtitle">Our local picks for your stay</p>
-  <div class="pickerWrap"><select id="picker" aria-label="Choose a Best category"></select></div>
+  <div class="pickerWrap"><select id="picker" autocomplete="off" aria-label="Choose a Best category"></select></div>
   <section class="card" id="card">
     <div class="category" id="category"></div>
     <h2 id="business"></h2>
@@ -34,13 +34,15 @@ h2{font-size:30px;line-height:1.05;margin:8px 0 8px}.blurb{color:var(--muted);ma
   <div class="pitch" id="pitch"><strong>Pitch Mode</strong><label>Business name</label><input id="pitchBusiness"><label>Guest perk</label><input id="pitchPerk"><button id="applyPitch">Preview sponsor</button></div>
   <div class="footer">One local pick per category.</div>
 </main>
-<script src="sponsors.js"></script>
+<script src="sponsors.js?v=cfa4f66a2b94"></script>
 <script>
 const cfg=window.BEST_NEARBY, $=id=>document.getElementById(id), picker=$("picker");
 $("siteTitle").textContent=cfg.siteTitle; $("subtitle").textContent=cfg.subtitle;
 cfg.categories.forEach((x,i)=>{const o=document.createElement("option");o.value=i;o.dataset.category=x.category;o.textContent=`${x.emoji||""} ${x.category}`.trim();picker.appendChild(o)});
 function render(i){const x=cfg.categories[i];$("category").textContent=`${x.emoji||""}  ${x.category==="Best of the Best"?x.category:`Best ${x.category}`}`;$("business").textContent=x.business;$("blurb").textContent=x.blurb;$("perk").textContent=x.perk;$("website").href=x.website;$("directions").href=x.directions}
-picker.addEventListener("change",()=>render(+picker.value));render(0);
+picker.addEventListener("change",()=>render(+picker.value));
+const defaultIndex=Math.max(0,cfg.categories.findIndex(x=>x.category==="Best of the Best"));
+picker.value=String(defaultIndex);render(defaultIndex);
 const params=new URLSearchParams(location.search);if(params.get("pitch")==="1"){$("pitch").classList.add("on");$("applyPitch").onclick=()=>{if($("pitchBusiness").value)$("business").textContent=$("pitchBusiness").value;if($("pitchPerk").value)$("perk").textContent=$("pitchPerk").value}}
 </script>
 </body></html>
